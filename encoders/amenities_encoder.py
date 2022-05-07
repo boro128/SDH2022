@@ -37,3 +37,6 @@ class AmenitiesEncoder(BaseEstimator, TransformerMixin):
         tmp.columns = cols
         
         return tmp
+
+    def get_feature_names(self):
+        return self.amenities_list
